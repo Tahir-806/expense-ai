@@ -1,0 +1,148 @@
+
+        body {
+            background: linear-gradient(135deg, #f4f7fd 0%, #e9eefb 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .login-card {
+            background: #fff;
+            border-radius: 2rem;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 12px 32px 0 rgba(31, 38, 135, 0.12);
+            max-width: 420px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.7s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .login-header h2 {
+            color: #2563eb;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .login-header p {
+            color: #6b7280;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .login-card form div {
+            margin-bottom: 1.4rem;
+        }
+
+        .login-card input[type="email"],
+        .login-card input[type="password"] {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: 1rem;
+            border: 1px solid #d1d5db;
+            transition: all 0.2s;
+            background-color: #fff; /* ✅ white background */
+            color: #000;
+        }
+
+        .login-card input[type="email"]:focus,
+        .login-card input[type="password"]:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(56, 163, 220, 0.2);
+            outline: none;
+            background-color: #fff; /* ✅ white background */
+            color: #000;
+        }
+
+        .login-card input{
+            background-color: #fff; /* ✅ white background */
+            color: #000;
+
+        }
+
+        .login-card label {
+            font-weight: 600;
+            color: #2563eb;
+            margin-bottom: 0.3rem;
+            display: block;
+        }
+
+        .login-card .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .login-card .remember-me input[type="checkbox"] {
+            accent-color: #2563eb;
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+
+        .login-card a {
+            color: #2563eb;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+
+        .login-card a:hover {
+            color: #38b6ff;
+        }
+
+        .login-card button {
+            background: linear-gradient(90deg, #38b6ff 0%, #2563eb 100%);
+            color: #fff;
+            font-weight: 600;
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 2rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+        button[type="submit"] {
+            display: flex;
+            justify-content: center; /* ✅ horizontally center */
+            align-items: center;     /* ✅ vertically center */
+            width: 100%;
+        }
+
+        .login-card button:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 6px 24px rgba(56, 163, 220, 0.19);
+        }
+
+        .login-card .session-status,
+        .login-card .input-error {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 500px) {
+            .login-card {
+                padding: 2rem 1.5rem;
+            }
+            .login-header h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+
+
+
+        
